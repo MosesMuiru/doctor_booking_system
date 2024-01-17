@@ -30,7 +30,7 @@ export default function Home() {
     
      </h1>
     <div className='my-5 flex items-center justify-start gap-5 '>
-      <button className='bg-main_green text-white py-[1.1rem] px-[1.2rem] rounded-full'>Book Your Doctor</button>
+      <Link href={"/booking"} className='bg-main_green text-white py-[1.1rem] px-[1.2rem] rounded-full'>Book Your Doctor</Link>
       <Link href={""} className='border border-main_green text-main_green  px-[3rem] py-[1.1rem] rounded-full' > Learn More</Link>
     </div>
     </div>
