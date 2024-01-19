@@ -19,7 +19,10 @@ export default function Home() {
     
 
 {/*  */}
-    <div  className=' flex items-center justify-between  px-[3rem] '>
+    <div  className=' flex items-center justify-center  px-[3rem] '>
+
+      <div className=''>
+
     <div className='w-1/2 flex flex-col gap-4'>
     <h2 className='text-[6rem] font-bold text-main_green block '>
       HealthCare When All Else Fails 
@@ -34,6 +37,8 @@ export default function Home() {
       <Link href={""} className='border border-main_green text-main_green  px-[3rem] py-[1.1rem] rounded-full' > Learn More</Link>
     </div>
     </div>
+        
+      </div>
 
 
     {/* the the home page */}
