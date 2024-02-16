@@ -25,7 +25,9 @@ export default function Home() {
 
     <div className='w-1/2 flex flex-col gap-4'>
     <h2 className='text-[6rem] font-bold text-main_green block '>
-      HealthCare When All Else Fails 
+     Book With Us.
+     Naftali 
+     Moses 
     <Image src={'/Flower.svg'} alt={''} width={30} height={40}></Image>
     </h2>
     <h1 className=' text-main_green text-2xl'>
