@@ -26,11 +26,11 @@ export default function Home() {
     <div className='w-1/2 flex flex-col gap-4'>
     <h2 className='text-[6rem] font-bold text-main_green block '>
       HealthCare When All Else Fails 
-    <img src={'/Flower.svg'} alt={''} width={30} height={40}></img>
+    <Image src={'/Flower.svg'} alt={''} width={30} height={40}></Image>
     </h2>
-    <h1 className=' text-main_green text-2xl'>First-Class, women-centric care for hormone issues & autoimmunity. Get fully-integrative care from a holistic doctor
+    <h1 className=' text-main_green text-2xl'>
     
-    
+   We Provide a fast way to improve HealthCare. Book through us today.
      </h1>
     <div className='my-5 flex items-center justify-start gap-5 '>
       <Link href={"/booking"} className='bg-main_green text-white py-[1.1rem] px-[1.2rem] rounded-full'>Book Your Doctor</Link>
