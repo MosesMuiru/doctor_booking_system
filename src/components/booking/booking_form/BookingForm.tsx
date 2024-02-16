@@ -21,7 +21,7 @@ function BookingForm() {
     setUserData({ ...user_data, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     //  this will push the data to the db
     console.log("data submitted")
