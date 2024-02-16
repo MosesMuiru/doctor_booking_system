@@ -1,6 +1,8 @@
 "use client";
 import PickDate from "@/components/date_picker/DatePicker";
+import Link from "next/link";
 import React, { useState } from "react";
+
 
 type user_data = {
   first_name: string;
@@ -15,26 +17,38 @@ function BookingForm() {
     id_number: "",
   });
 
-  const handle_input_change = (e) => {
+  const [submitted, setSubmitted] = useState(false)
+
+  const handle_input_change = (e:any) => {
     const { name, value } = e.target;
+    
 
     setUserData({ ...user_data, [name]: value });
   };
 
   const handleSubmit = (e:any) => {
-    e.preventDefault();
+
+  e.preventDefault();
     //  this will push the data to the db
     console.log("data submitted")
+    
     console.log(user_data)
     setUserData({
       first_name: "",
       last_name: "",
       id_number: ""
     })
+    setSubmitted(true)
+
   };
   return (
     <div className="w-3/4">
       <div className="flex flex-col items-start justify-center w-full gap-10">
+        {
+          submitted ? <h1 className="text-1xl font-bold text-red-300">
+          Appointment Booked successfuly
+        </h1> : ""
+        }
         <h1 className="text-2xl font-bold text-main_green">
           Fill the details correctly
         </h1>
@@ -70,12 +84,14 @@ function BookingForm() {
           />
           <PickDate />
 
+
           <input
             type="submit"
             className="bg-main_green rounded-md text-[1.1rem] text-white py-2 px-4 text-bold"
             value={"Book Appointmednt"}
             onClick={handleSubmit}
           />
+
         </form>
       </div>
     </div>

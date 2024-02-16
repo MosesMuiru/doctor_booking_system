@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+// eslint-disable-next-line @next/next/no-img-element
 
 type Props = {}
 
